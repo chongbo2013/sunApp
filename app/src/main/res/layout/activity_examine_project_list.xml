@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sunlearning.sunlearningdemo.examine.ExamineProjectListActivity"
+    android:padding="4dp"
+    android:orientation="vertical">
+    <include layout="@layout/fragment_examine_top_menu"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="点击切换项目，长按拖动排序"/>
+
+    <GridView
+        android:id="@+id/examine_project_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+</LinearLayout>

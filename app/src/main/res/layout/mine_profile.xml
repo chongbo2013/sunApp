@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mine_profile"
+    android:layout_width="match_parent"
+    android:layout_height="203dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mine_bj" />
+
+    <TextView
+        android:id="@+id/tv_praise_user"
+        android:layout_width="56dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/mine_bg_zan"
+        android:drawableLeft="@drawable/zan_white"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:text="12"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="12sp" />
+
+    <sunlearning.sunlearningdemo.utils.widegt.CircleImageView
+        android:id="@+id/mine_head_img_civ"
+        attr:layout_border_color="@color/color_E5E5E5"
+        attr:layout_border_width="1dp"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/head_img" />
+
+    <TextView
+        android:id="@+id/mine_nickname_sex_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_head_img_civ"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="10dp"
+        android:text="曾雪"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mine_autograph_tv"
+        style="@style/style_match_parent"
+        android:layout_below="@id/mine_nickname_sex_tv"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:hint="说点什么吧"
+        android:lines="2"
+        android:text=""
+        android:textColor="@color/color_C8C8C8"
+        android:textColorHint="@color/color_C8C8C8"
+        android:textSize="14dp" />
+</RelativeLayout>

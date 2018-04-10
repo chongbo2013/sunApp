@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/common_measure_13dp"
+    android:background="@color/color_F6F6F6"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line1"
+        style="@style/style_horizontal_line" />
+
+    <include
+        android:id="@+id/mine_income_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:paddingLeft="@dimen/common_measure_12dp"
+        android:paddingRight="@dimen/common_measure_12dp">
+
+        <TextView style="@style/style_horizontal_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:paddingLeft="@dimen/common_measure_12dp"
+        android:paddingRight="@dimen/common_measure_12dp">
+
+        <TextView style="@style/style_horizontal_line" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/mine_live_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/mine_livein_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/line4"
+        style="@style/style_horizontal_line"
+        android:layout_marginBottom="@dimen/common_measure_13dp" />
+
+    <View style="@style/style_horizontal_line" />
+
+    <include
+        android:id="@+id/mine_share_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:paddingLeft="@dimen/common_measure_12dp"
+        android:paddingRight="@dimen/common_measure_12dp">
+
+        <TextView style="@style/style_horizontal_line" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/mine_interpersonal_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/style_horizontal_line" />
+
+    <View
+        style="@style/style_horizontal_line"
+        android:layout_marginTop="@dimen/common_measure_13dp" />
+
+    <include
+        android:id="@+id/mine_study_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:paddingLeft="@dimen/common_measure_12dp"
+        android:paddingRight="@dimen/common_measure_12dp">
+
+        <TextView style="@style/style_horizontal_line" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/mine_test_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:paddingLeft="@dimen/common_measure_12dp"
+        android:paddingRight="@dimen/common_measure_12dp">
+
+        <TextView style="@style/style_horizontal_line" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/mine_train_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/style_horizontal_line" />
+
+    <View
+        style="@style/style_horizontal_line"
+        android:layout_marginTop="@dimen/common_measure_13dp" />
+
+    <include
+        android:id="@+id/mine_track_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/mine_integral_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/style_horizontal_line" />
+
+    <View
+        style="@style/style_horizontal_line"
+        android:layout_marginTop="@dimen/common_measure_13dp" />
+
+
+    <include
+        android:id="@+id/mine_set_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/style_horizontal_line" />
+
+
+    <View
+        style="@style/style_horizontal_line"
+        android:layout_marginTop="@dimen/common_measure_13dp" />
+
+
+    <include
+        android:id="@+id/mine_info_ll"
+        layout="@layout/item_mine_frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/style_horizontal_line" />
+</LinearLayout>

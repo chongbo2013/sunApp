@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">SunlearningDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mine_download">我的下载</string>
+    <string name="mine_collect">我的收藏</string>
+    <string name="mine_note">我的笔记</string>
+    <string name="mine_live_open">我要直播</string>
+
+
+    <string-array name="mine_string_ll">
+        <item>我的收入情况</item>
+        <item>我的直播</item>
+        <item>我参与的直播</item>
+        <item>分享记录</item>
+        <item>我的人脉</item>
+        <item>学习记录</item>
+        <item>考试记录</item>
+        <item>培训班</item>
+        <item>成长轨迹</item>
+        <item>积分</item>
+        <item>设置</item>
+        <item>个人中心</item>
+    </string-array>
+
+    <integer-array name="mine_img_ll">
+        <item>@drawable/mine_share</item>
+        <item>@drawable/mine_share</item>
+        <item>@drawable/mine_share</item>
+        <item>@drawable/mine_share</item>
+        <item>@drawable/mine_attention</item>
+        <item>@drawable/mine_study_history</item>
+        <item>@drawable/mine_test_history</item>
+        <item>@drawable/mine_train_history</item>
+        <item>@drawable/mine_track</item>
+        <item>@drawable/mine_integral</item>
+        <item>@drawable/mine_setting</item>
+        <item>@drawable/mine_setting</item>
+    </integer-array>
+</resources>

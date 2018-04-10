@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sunlearning.sunlearningdemo.main.MainMenuActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/main_home_bottom"
+        android:id="@+id/rg_main_menu"
+        >
+        <RadioButton
+            style="@style/style_home_rb"
+            android:drawableTop="@drawable/selector_home"
+            android:text="首页"
+            android:id="@+id/rg_main_menu_home"
+            />
+
+        <RadioButton
+            style="@style/style_home_rb"
+            android:text="学习"
+            android:drawableTop="@drawable/selector_study"
+            android:id="@+id/rg_main_menu_study"
+            />
+
+        <RadioButton
+            style="@style/style_home_rb"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_examine"
+            android:text="测评"
+            android:id="@+id/rg_main_menu_examine"
+            />
+        <RadioButton
+            style="@style/style_home_rb"
+
+            android:drawableTop="@drawable/selector_ask"
+            android:text="问吧"
+            android:id="@+id/rg_main_menu_ask"
+            />
+        <RadioButton
+            style="@style/style_home_rb"
+            android:drawableTop="@drawable/selector_mine"
+            android:text="我的"
+            android:id="@+id/rg_main_menu_mine"
+            />
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/rg_main_menu"
+        android:id="@+id/fl_menu_content"></FrameLayout>
+
+</RelativeLayout>
+
+

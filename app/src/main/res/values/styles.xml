@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- 按水平方向权重比为1的样式-->
+    <style name="style_horizontal_weight">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- home页面RadioButton样式-->
+    <style name="style_home_rb" parent="style_horizontal_weight">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center|bottom</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:textColor">@drawable/selector_green_text</item>
+    </style>
+
+    <!--一条灰色的横线-->
+    <style name="style_horizontal_line">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/color_E5E5E5</item>
+    </style>
+
+    <!-- 按填充满样式-->
+    <style name="style_match_parent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <!-- 我的模块我的下载-->
+    <style name="style_mine_tv" parent="style_horizontal_weight">
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">14dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_323232</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+</resources>

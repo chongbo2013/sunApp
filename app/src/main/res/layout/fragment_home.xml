@@ -1,0 +1,288 @@
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableLoadMore="false"
+    app:srlEnablePreviewInEditMode="true">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/home_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:id="@+id/home_top_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_search_title"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="9"
+                        android:background="@drawable/search_inputbox"
+                        android:drawableLeft="@drawable/main_search_gray"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="搜索课程、问题、人脉、培训班、笔记、直播等"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/main_message" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/home_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_banner"
+                android:background="@color/white"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="14dp">
+
+                <Button
+                    android:id="@+id/home_classmates"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="同学圈"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/home_training"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="培训班"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/home_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="群组"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/home_mall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="商城"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/home_live"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="直播"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View style="@style/style_horizontal_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+                    android:id="@+id/home_announce"
+                    android:layout_width="96px"
+                    android:layout_height="46px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_home_announce" />
+
+                <ImageView
+                    android:id="@+id/home_announce_remind"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/home_announce"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_home_announce_remind" />
+
+                <ImageView
+                    android:id="@+id/home_iv_rednew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_toRightOf="@id/home_announce_remind"
+                    android:src="@drawable/mine_home_announce_line" />
+
+
+                <com.maning.library.SwitcherView
+                    android:id="@+id/switcherView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/home_iv_rednew"
+                    android:background="#ffffff"
+                    app:switcherDefaultText="默认展示的文案"
+                    app:switcherRollingTime="4000"
+                    app:switcherTextColor="@color/color_323232"
+                    app:switcherTextSize="6sp" />
+
+                <TextView
+                    android:id="@+id/home_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:drawablePadding="10px"
+                    android:drawableRight="@drawable/main_home_more"
+                    android:gravity="center"
+                    android:text="更多"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View style="@style/style_horizontal_line" />
+
+            <View
+                style="@style/style_horizontal_line"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="最新课程"
+                    android:textSize="12dp" />
+
+                <include
+                    layout="@layout/home_course_item"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/latestCourse"></include>
+            </LinearLayout>
+
+            <View
+                style="@style/style_horizontal_line"
+                android:layout_marginTop="8dp" />
+
+            <View
+                style="@style/style_horizontal_line"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="最热课程"
+                    android:textSize="12dp" />
+
+                <include
+                    layout="@layout/home_course_item"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/hotestCourse"></include>
+            </LinearLayout>
+
+            <View
+                style="@style/style_horizontal_line"
+                android:layout_marginTop="8dp" />
+
+            <View
+                style="@style/style_horizontal_line"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="最新直播预告"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                style="@style/style_horizontal_line"
+                android:layout_marginTop="8dp" />
+
+            <View
+                style="@style/style_horizontal_line"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="最新直播回顾"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

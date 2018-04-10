@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="sunlearning.sunlearningdemo.ask.AskFragment"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/fragment_ask_top_menu"></include>
+
+    <View style="@style/style_horizontal_line"></View>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/ask_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMinWidth="78dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ask_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

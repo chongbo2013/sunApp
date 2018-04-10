@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    tools:context="sunlearning.sunlearningdemo.main.LoginActivity">
+    <TextView
+        android:id="@+id/examine_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绩效考核究竟谁应该得A"
+        android:textColor="@color/color_323232"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/examine_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-11-04 17:13"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/examine_id"/>
+
+    <TextView
+        android:id="@+id/examine_time_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="至"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/examine_id"
+        android:layout_toRightOf="@id/examine_start_time"/>
+
+    <TextView
+        android:id="@+id/examine_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-11-04 18:43"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/examine_id"
+        android:layout_toRightOf="@id/examine_time_flag"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_FF0000"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/examine_id"
+        android:layout_alignParentRight="true"
+        android:text="评卷中"/>
+</RelativeLayout>

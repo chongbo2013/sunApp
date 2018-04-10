@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sunlearning.sunlearningdemo.study.StudyFragment">
+
+    <include layout="@layout/fragment_study_top_menu"></include>
+
+    <View style="@style/style_horizontal_line"/>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/study_tab_layout"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/study_view_pager"
+        ></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

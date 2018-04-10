@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <include layout="@layout/fragment_study_top_menu"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="点击切换项目，长按拖动排序"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:id="@+id/project_grid_view">
+
+    </GridView>
+
+</LinearLayout>
